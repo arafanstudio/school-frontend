@@ -25,8 +25,6 @@ function Router() {
       <Route path={"/fasilitas"} component={Fasilitas} />
       <Route path={"/elearning"} component={Elearning} />
       <Route path={"/perpustakaan"} component={Perpustakaan} />
-      <Route path={"/admin/login"} component={AdminLogin} />
-      <Route path={"/admin/create-article"} component={ArticleCreation} />
       <Route path={"/article/:id"} component={ArticleDetail} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
