@@ -78,6 +78,11 @@ export default function Footer() {
                   Perpustakaan
                 </a>
               </li>
+              <li>
+                <a href="/admin/login" className="text-gray-600 hover:text-blue-600 transition-colors">
+                  Halaman Admin
+                </a>
+              </li>
             </ul>
           </div>
 
