@@ -80,7 +80,7 @@ export default function Footer() {
               </li>
               <li>
                 <a href="/admin/login" className="text-gray-600 hover:text-blue-600 transition-colors">
-                  Halaman Admin
+                  Admin Login
                 </a>
               </li>
             </ul>

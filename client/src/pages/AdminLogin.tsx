@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useLocation, useRoute } from "wouter";
-import { VITE_API_BASE_URL } from "../const";
 import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card";
 import { Input } from "../components/ui/input";
 import { Button } from "../components/ui/button";
@@ -18,7 +17,7 @@ export default function AdminLogin() {
     setLoading(true);
 
     try {
-      const response = await fetch(`${VITE_API_BASE_URL}/api/admin/login`, {
+      const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/admin/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
