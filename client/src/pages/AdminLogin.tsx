@@ -6,11 +6,11 @@ import { Button } from "../components/ui/button";
 import { Label } from "../components/ui/label";
 import { toast } from "sonner";
 
-export default function AdminLogin({ isNonSPA = false }: { isNonSPA?: boolean }) {
+export default function AdminLogin() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
-  const [, setLocation] = isNonSPA ? [null, (path: string) => window.location.href = path] : useLocation();
+  const [, setLocation] = useLocation();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -29,11 +29,7 @@ export default function AdminLogin({ isNonSPA = false }: { isNonSPA?: boolean })
         // Simple authentication: store a flag in localStorage
         localStorage.setItem("isAdminAuthenticated", "true");
         toast.success("Login successful!");
-        if (isNonSPA) {
-          window.location.href = "/admin/create-article";
-        } else {
-          setLocation("/admin/create-article");
-        }
+        setLocation("/admin/create-article");
       } else {
         const errorData = await response.json();
         toast.error(errorData.message || "Login failed. Check your credentials.");
