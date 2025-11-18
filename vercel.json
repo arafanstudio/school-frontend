@@ -23,6 +23,6 @@
     { "src": "/admin/login", "dest": "/index.html" },
     { "src": "/admin/create-article", "dest": "/index.html" },
     { "src": "/article/[^/]+", "dest": "/index.html" },
-    { "src": "/404", "dest": "/index.html" },
+    { "src": "/404", "dest": "/index.html" }
   ]
 }
