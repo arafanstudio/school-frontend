@@ -22,8 +22,8 @@
     { "src": "/perpustakaan", "dest": "/index.html" },
     { "src": "/admin/login", "dest": "/index.html" },
     { "src": "/admin/create-article", "dest": "/index.html" },
-    { "src": "/article/[^/]+", "dest": "/index.html" }, // Menangani rute dinamis seperti /article/3
+    { "src": "/article/[^/]+", "dest": "/index.html" },
     { "src": "/404", "dest": "/index.html" },
-    { "src": "/(.* )", "dest": "/index.html" } // Fallback untuk rute lain
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
