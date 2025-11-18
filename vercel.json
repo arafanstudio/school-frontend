@@ -22,4 +22,21 @@
       "dest": "/dist/admin/login/index.html"
     }
   ]
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "https://school-be-xi.vercel.app/api/$1"
+    },
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/profil", "dest": "/index.html" },
+    { "src": "/akademik", "dest": "/index.html" },
+    { "src": "/ekstrakurikuler", "dest": "/index.html" },
+    { "src": "/fasilitas", "dest": "/index.html" },
+    { "src": "/elearning", "dest": "/index.html" },
+    { "src": "/perpustakaan", "dest": "/index.html" },
+    { "src": "/admin/login", "dest": "/index.html" },
+    { "src": "/admin/create-article", "dest": "/index.html" },
+    { "src": "/article/[^/]+", "dest": "/index.html" },
+    { "src": "/404", "dest": "/index.html" },
+  ]
 }
