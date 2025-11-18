@@ -15,7 +15,11 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/index.html"
+      "dest": "/dist/index.html"
+    },
+    {
+      "src": "/admin/login",
+      "dest": "/dist/admin/login/index.html"
     }
   ]
 }
