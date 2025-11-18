@@ -59,11 +59,6 @@ export default function Footer() {
             <h4 className="font-bold text-gray-800 mb-4">Menu Cepat</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="https://school-be-xi.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600 transition-colors">
-                  Halaman Admin
-                </a>
-              </li>
-              <li>
                 <a href="/" className="text-gray-600 hover:text-blue-600 transition-colors">
                   Beranda
                 </a>
@@ -81,6 +76,11 @@ export default function Footer() {
               <li>
                 <a href="/perpustakaan" className="text-gray-600 hover:text-blue-600 transition-colors">
                   Perpustakaan
+                </a>
+              </li>
+              <li>
+                <a href="https://school-be-xi.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600 transition-colors font-bold">
+                  Admin Access
                 </a>
               </li>
             </ul>
