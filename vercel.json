@@ -14,7 +14,7 @@
       "dest": "https://school-be-xi.vercel.app/api/$1"
     },
     {
-      "src": "/(.* )",
+      "src": "/(.*)",
       "dest": "/dist/index.html"
     }
   ]
