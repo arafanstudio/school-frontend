@@ -78,11 +78,6 @@ export default function Footer() {
                   Perpustakaan
                 </a>
               </li>
-              <li>
-                <a href="https://school-be-xi.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600 transition-colors font-bold">
-                  Admin Access
-                </a>
-              </li>
             </ul>
           </div>
 

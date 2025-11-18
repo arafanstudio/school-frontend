@@ -42,7 +42,7 @@ export default defineConfig({
     },
     proxy: {
       "/api": {
-        target: "http://localhost:3000", // Target server backend
+        target: "https://school-be-xi.vercel.app/", // Target server backend
         changeOrigin: true,
         secure: false,
         rewrite: (path ) => path.replace(/^\/api/, "/api"),
