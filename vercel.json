@@ -13,9 +13,17 @@
       "src": "/api/(.*)",
       "dest": "https://school-be-xi.vercel.app/api/$1"
     },
-    {
-      "src": "/(.*)",
-      "dest": "/dist/index.html"
-    }
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/profil", "dest": "/index.html" },
+    { "src": "/akademik", "dest": "/index.html" },
+    { "src": "/ekstrakurikuler", "dest": "/index.html" },
+    { "src": "/fasilitas", "dest": "/index.html" },
+    { "src": "/elearning", "dest": "/index.html" },
+    { "src": "/perpustakaan", "dest": "/index.html" },
+    { "src": "/admin/login", "dest": "/index.html" },
+    { "src": "/admin/create-article", "dest": "/index.html" },
+    { "src": "/article/[^/]+", "dest": "/index.html" }, // Menangani rute dinamis seperti /article/3
+    { "src": "/404", "dest": "/index.html" },
+    { "src": "/(.* )", "dest": "/index.html" } // Fallback untuk rute lain
   ]
 }
